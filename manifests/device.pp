@@ -62,7 +62,7 @@ define mkfs::device(
   }
 
   mount { $dest:
-    ensure   => 'present',
+    ensure   => 'mounted',
     device   => $name,
     fstype   => $type,
     options  => 'defaults',
